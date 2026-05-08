@@ -1,11 +1,18 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
+import { URL, EMAIL, PASSWORD } from '../helpers/constants.js';
 
-test('has title', async ({ page }) => {
-  await page.goto('https://uat.xtremelabs.io/Account/LogOn?returnUrl=%2fMyAccount');
+test('login test', async ({ page }) => {
+  const email = EMAIL;
+  const password = PASSWORD;
 
-await expect(page.locator('img[alt="XtremeLabs"]')).toBeVisible();
+  if (!email || !password) {
+    throw new Error('Missing EMAIL or PASSWORD in environment');
+  }
 
-  // Expect a title "to contain" a substring.
-  //await expect(page).toHaveTitle(/Playwright/);
+  await page.goto(URL + 'Account/LogOn?returnUrl=%2fMyAccount');
+  await page.locator('input[id="username"]').fill(email);
+  await page.locator('input[id="password"]').fill(password);
+  await page.click('button[id="loginButton"]');
+  await page.waitForURL('**/LabMenu/**', { timeout: 15000 });
 });
 
