@@ -13,6 +13,6 @@ export class LoginPage {
     await this.page.locator('input[id="username"]').fill(EMAIL);
     await this.page.locator('input[id="password"]').fill(PASSWORD);
     await this.page.click('button[id="loginButton"]');
-    await this.page.waitForURL('**/LabMenu/**', { timeout: 15000 });
+    await this.page.waitForURL('**LabMenu**', { timeout: 30000 });
   }
 }

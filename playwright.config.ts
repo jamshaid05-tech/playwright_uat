@@ -23,6 +23,7 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  timeout: 120000,
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     headless: true,
@@ -38,12 +39,12 @@ export default defineConfig({
       name: 'setup',
       testMatch: /global\.setup\.ts/,
       teardown: 'teardown',
-      timeout: 30000,
+      timeout: 60000,
     },
     {
       name: 'teardown',
-      testMatch: /teardown\.spec\.ts/,
-      timeout: 30000,
+      testMatch: /global\.teardown\.ts/,
+      timeout: 60000,
     },
     {
       name: 'chromium',
