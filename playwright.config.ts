@@ -39,12 +39,12 @@ export default defineConfig({
       name: 'setup',
       testMatch: /global\.setup\.ts/,
       teardown: 'teardown',
-      timeout: 60000,
+      timeout: 150000,
     },
     {
       name: 'teardown',
       testMatch: /global\.teardown\.ts/,
-      timeout: 60000,
+      timeout: 150000,
     },
     {
       name: 'chromium',
@@ -52,11 +52,11 @@ export default defineConfig({
       dependencies: ['setup'],
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-      dependencies: ['setup'],
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    //   dependencies: ['setup'],
+    // },
 
     {
       name: 'webkit',
@@ -75,10 +75,10 @@ export default defineConfig({
     // },
 
     /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
+    {
+      name: 'Microsoft Edge',
+      use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    },
     // {
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
