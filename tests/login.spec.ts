@@ -16,5 +16,3 @@ test('login test', async ({ page }) => {
   await page.click('button[id="loginButton"]');
   await page.waitForURL('**LabMenu**', { timeout: 150000 });
 });
-
-// await page.locator('input#username').fill(email);
