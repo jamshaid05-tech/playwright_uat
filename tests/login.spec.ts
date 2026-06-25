@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 import { URL, EMAIL, PASSWORD } from '../helpers/constants.js';
 
 test('login test', async ({ page }) => {
@@ -10,9 +10,9 @@ test('login test', async ({ page }) => {
   }
 
   await page.context().clearCookies();
-  await page.goto(URL);
+  await page.goto(URL, { waitUntil: 'networkidle' });
   await page.locator('input[id="username"]').fill(email);
   await page.locator('input[id="password"]').fill(password);
   await page.click('button[id="loginButton"]');
-  await page.waitForURL('**LabMenu**', { timeout: 150000 });
+  await expect(page.locator('#FAQs')).toBeVisible({ timeout: 30000 });
 });

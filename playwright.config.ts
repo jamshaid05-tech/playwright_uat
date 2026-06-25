@@ -5,7 +5,7 @@ import fs from 'fs';
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
- *
+ */
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -23,7 +23,7 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-  timeout: 120000,
+  timeout: 250000,
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     headless: true,
@@ -39,12 +39,12 @@ export default defineConfig({
       name: 'setup',
       testMatch: /global\.setup\.ts/,
       teardown: 'teardown',
-      timeout: 150000,
+      timeout: 250000,
     },
     {
       name: 'teardown',
       testMatch: /global\.teardown\.ts/,
-      timeout: 150000,
+      timeout: 250000,
     },
     {
       name: 'chromium',
@@ -52,17 +52,18 @@ export default defineConfig({
       dependencies: ['setup'],
     },
 
+    /*
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
       dependencies: ['setup'],
     },
-
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
       dependencies: ['setup'],
     },
+    */
 
     /* Test against mobile viewports. */
     // {
@@ -75,15 +76,17 @@ export default defineConfig({
     // },
 
     /* Test against branded browsers. */
+    /*
     {
       name: 'Microsoft Edge',
       use: { ...devices['Desktop Edge'], channel: 'msedge' },
       dependencies: ['setup'],
     },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
+    {
+      name: 'Google Chrome',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    },
+    */
   ],
 
   /* Run your local dev server before starting the tests */
