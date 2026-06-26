@@ -42,7 +42,7 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test
         continue-on-error: true
-       env:
+        env:
           URL: ${{ secrets.URL }}
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
