@@ -17,6 +17,10 @@ jobs:
       pages: write
       id-token: write
 
+    env:
+      EMAIL: ${{ secrets.EMAIL }}
+      PASSWORD: ${{ secrets.PASSWORD }}
+
     steps:
 
       - name: Checkout repository
