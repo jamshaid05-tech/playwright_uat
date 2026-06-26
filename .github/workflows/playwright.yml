@@ -18,6 +18,7 @@ jobs:
       id-token: write
 
     env:
+      URL: ${{ secrets.URL }}
       EMAIL: ${{ secrets.EMAIL }}
       PASSWORD: ${{ secrets.PASSWORD }}
 
