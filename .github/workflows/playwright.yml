@@ -40,12 +40,12 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test
+        run: |
+          export URL="${{ secrets.URL }}"
+          export EMAIL="${{ secrets.EMAIL }}"
+          export PASSWORD="${{ secrets.PASSWORD }}"
+          npx playwright test
         continue-on-error: true
-        env:
-          URL: ${{ secrets.URL }}
-          EMAIL: ${{ secrets.EMAIL }}
-          PASSWORD: ${{ secrets.PASSWORD }}
 
       - name: Generate Allure Report
         run: npx allure generate allure-results --clean -o allure-report
