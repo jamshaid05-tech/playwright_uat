@@ -1,0 +1,463 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#MainContent"
+    - region "Announcement" [ref=e5]:
+      - generic [ref=e9]:
+        - generic [ref=e12]: Free Shipping on Orders above Rs 1500/-
+        - generic [ref=e13]:
+          - link "042 111 789 456" [ref=e15] [cursor=pointer]:
+            - /url: tel:042111789456
+            - img [ref=e16]
+            - text: 042 111 789 456
+          - link "+92-345-4037778" [ref=e18] [cursor=pointer]:
+            - /url: https://wa.me/923454037778
+            - img [ref=e19]
+            - text: +92-345-4037778
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - button [ref=e26] [cursor=pointer]
+          - generic [ref=e30]: Menu
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]: Menu
+            - button "×" [ref=e34] [cursor=pointer]
+          - navigation [ref=e35]:
+            - list [ref=e36]:
+              - listitem [ref=e37]:
+                - generic [ref=e38]:
+                  - link "SUMMER COLLECTION 26" [ref=e39] [cursor=pointer]:
+                    - /url: /collections/summer-collection
+                  - button "Toggle Submenu" [ref=e40] [cursor=pointer]
+              - listitem [ref=e41]:
+                - generic [ref=e42]:
+                  - link "SHIRTS" [ref=e43] [cursor=pointer]:
+                    - /url: https://uniworthshop.com/collections/shirts?filter.v.availability=1
+                  - button "Toggle Submenu" [ref=e44] [cursor=pointer]
+              - listitem [ref=e45]:
+                - generic [ref=e46]:
+                  - link "TROUSERS" [ref=e47] [cursor=pointer]:
+                    - /url: /collections/trousers
+                  - button "Toggle Submenu" [ref=e48] [cursor=pointer]
+              - listitem [ref=e49]:
+                - generic [ref=e50]:
+                  - link "SUITING" [ref=e51] [cursor=pointer]:
+                    - /url: /collections/suiting
+                  - button "Toggle Submenu" [ref=e52] [cursor=pointer]
+              - listitem [ref=e53]:
+                - generic [ref=e54]:
+                  - link "ETHNIC WEAR" [ref=e55] [cursor=pointer]:
+                    - /url: /collections/ethnic-wear
+                  - button "Toggle Submenu" [ref=e56] [cursor=pointer]
+              - listitem [ref=e57]:
+                - generic [ref=e58]:
+                  - link "ACTIVE WEAR" [ref=e59] [cursor=pointer]:
+                    - /url: /collections/active-wear
+                  - button "Toggle Submenu" [ref=e60] [cursor=pointer]
+              - listitem [ref=e61]:
+                - link "CASUAL PAJAMA" [ref=e63] [cursor=pointer]:
+                  - /url: /collections/casual-pajama
+              - listitem [ref=e64]:
+                - generic [ref=e65]:
+                  - link "LOUNGEWEAR" [ref=e66] [cursor=pointer]:
+                    - /url: /collections/loungewear
+                  - button "Toggle Submenu" [ref=e67] [cursor=pointer]
+              - listitem [ref=e68]:
+                - generic [ref=e69]:
+                  - link "ACCESSORIES" [ref=e70] [cursor=pointer]:
+                    - /url: /collections/accessories
+                  - button "Toggle Submenu" [ref=e71] [cursor=pointer]
+              - listitem [ref=e72]:
+                - generic [ref=e73]:
+                  - link "WINTER COLLECTION" [ref=e74] [cursor=pointer]:
+                    - /url: /collections/fall-winter
+                  - button "Toggle Submenu" [ref=e75] [cursor=pointer]
+              - listitem [ref=e76]:
+                - link "CLEARANCE SALE" [ref=e78] [cursor=pointer]:
+                  - /url: /collections/sale
+          - generic [ref=e79]:
+            - link "Uniworth Black" [ref=e81] [cursor=pointer]:
+              - /url: https://uniworthblack.com/
+            - link "Shipping Policy" [ref=e83] [cursor=pointer]:
+              - /url: https://uniworthshop.com/pages/shipping-policy
+          - generic [ref=e84]:
+            - link "facebook" [ref=e86] [cursor=pointer]:
+              - /url: https://www.facebook.com/uniworthshop
+              - img "facebook" [ref=e87]
+            - link "Instagram" [ref=e89] [cursor=pointer]:
+              - /url: https://www.instagram.com/uniworthshop/
+              - img "Instagram" [ref=e90]
+            - link "TikTok" [ref=e92] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@uniworthshop
+              - img "TikTok" [ref=e93]
+            - link "YouTube" [ref=e95] [cursor=pointer]:
+              - /url: https://www.youtube.com/@Uniworthshopofficial
+              - img "YouTube" [ref=e96]
+      - heading "Uniworth" [level=1] [ref=e98]:
+        - link "Uniworth" [ref=e99] [cursor=pointer]:
+          - /url: /
+          - img "Uniworth" [ref=e100]
+      - generic [ref=e101]:
+        - group [ref=e103]:
+          - generic "Search" [ref=e104] [cursor=pointer]:
+            - img [ref=e105]
+        - link "Log in" [ref=e107] [cursor=pointer]:
+          - /url: /account/login
+          - img [ref=e108]
+          - generic [ref=e111]: Log in
+        - link "Cart 0 items" [ref=e112] [cursor=pointer]:
+          - /url: /cart
+          - img [ref=e113]
+          - generic [ref=e117]: Cart
+          - generic [ref=e118]:
+            - generic [ref=e119]: "0"
+            - generic [ref=e120]: 0 items
+    - main [ref=e121]:
+      - generic [ref=e125]:
+        - button "Previous" [ref=e126] [cursor=pointer]:
+          - img [ref=e127]
+        - listbox [ref=e130]:
+          - option [ref=e135]
+          - option [ref=e139]:
+            - generic [ref=e141]:
+              - link "Uniworth":
+                - /url: https://uniworthshop.com/collections/formal-shirts?filter.v.availability=1
+          - option [ref=e143]
+          - option [ref=e147]
+          - option [ref=e152]
+          - option [ref=e157]
+          - option [ref=e162]
+        - button "Next" [ref=e171] [cursor=pointer]:
+          - img [ref=e172]
+      - generic [ref=e179]:
+        - link "Shop Polos" [ref=e181] [cursor=pointer]:
+          - /url: /collections/polo-t-shirts
+          - generic [ref=e183]:
+            - paragraph [ref=e185]: Shop
+            - heading [level=3]
+            - heading "Polos" [level=1]
+        - link "Shop Shirts" [ref=e187] [cursor=pointer]:
+          - /url: /collections/shirts
+          - generic [ref=e189]:
+            - paragraph [ref=e191]: Shop
+            - heading [level=3]
+            - heading "Shirts" [level=1]
+      - generic [ref=e195]:
+        - generic [ref=e197]:
+          - link "Ethnic" [ref=e200] [cursor=pointer]:
+            - /url: /collections/ethnic-wear
+          - generic [ref=e201]:
+            - paragraph [ref=e202]: Shop
+            - heading "Ethnic" [level=3] [ref=e203]:
+              - link "Ethnic" [ref=e204] [cursor=pointer]:
+                - /url: /collections/ethnic-wear
+                - generic [ref=e205]: Ethnic
+        - generic [ref=e207]:
+          - link "Active Wear" [ref=e210] [cursor=pointer]:
+            - /url: /collections/active-wear
+          - generic [ref=e211]:
+            - paragraph [ref=e212]: Shop
+            - heading "Active Wear" [level=3] [ref=e213]:
+              - link "Active Wear" [ref=e214] [cursor=pointer]:
+                - /url: /collections/active-wear
+                - generic [ref=e215]: Active Wear
+        - generic [ref=e217]:
+          - link "Relaxed Fit" [ref=e220] [cursor=pointer]:
+            - /url: /collections/relaxed-fit
+          - generic [ref=e221]:
+            - paragraph [ref=e222]: Shop
+            - heading "Relaxed Fit" [level=3] [ref=e223]:
+              - link "Relaxed Fit" [ref=e224] [cursor=pointer]:
+                - /url: /collections/relaxed-fit
+                - generic [ref=e225]: Relaxed Fit
+      - generic [ref=e228]:
+        - generic [ref=e229]:
+          - button "New" [ref=e230] [cursor=pointer]
+          - generic [ref=e231]: /
+          - button "Best Seller" [ref=e232] [cursor=pointer]
+          - generic [ref=e233]: /
+          - button "Trending" [ref=e234] [cursor=pointer]
+        - generic [ref=e236]:
+          - button "❮" [ref=e237] [cursor=pointer]
+          - generic [ref=e238]:
+            - link "Brown Plain Interlock Polo Shirt" [ref=e240] [cursor=pointer]:
+              - /url: /products/brown-plain-interlock-polo-shirt-tp2652
+              - img "Brown Plain Interlock Polo Shirt" [ref=e241]
+            - link "Navy Color Block Band Collar T-Shirt" [ref=e243] [cursor=pointer]:
+              - /url: /products/navy-color-block-band-collar-t-shirt-tbc2605
+              - img "Navy Color Block Band Collar T-Shirt" [ref=e244]
+            - link "Rust Stripe Jersey Polo Shirt" [ref=e246] [cursor=pointer]:
+              - /url: /products/rust-stripe-jersey-polo-shirt-tp2675
+              - img "Rust Stripe Jersey Polo Shirt" [ref=e247]
+            - link "Navy Stripe Pique Polo Shirt" [ref=e249] [cursor=pointer]:
+              - /url: /products/navy-stripe-pique-polo-shirt-tp2676
+              - img "Navy Stripe Pique Polo Shirt" [ref=e250]
+            - link "Cream Plain Tailored Smart Fit Cuban Collar Linen Shirt" [ref=e252] [cursor=pointer]:
+              - /url: /products/cream-plain-tailored-smart-fit-cuban-collar-linen-shirt-fs2412sh
+              - img "Cream Plain Tailored Smart Fit Cuban Collar Linen Shirt" [ref=e253]
+            - link "Maroon Plain Tailored Smart Fit Linen Shirt" [ref=e255] [cursor=pointer]:
+              - /url: /products/maroon-plain-tailored-smart-fit-linen-shirt
+              - img "Maroon Plain Tailored Smart Fit Linen Shirt" [ref=e256]
+            - link "Sky Plain Classic Fit Linen Shirt" [ref=e258] [cursor=pointer]:
+              - /url: /products/sky-plain-classic-fit-linen-shirt-fs2415-2rf
+              - img "Sky Plain Classic Fit Linen Shirt" [ref=e259]
+            - link "Blue Stripe Classic Fit Shirt" [ref=e261] [cursor=pointer]:
+              - /url: /products/blue-stripe-classic-fit-shirt-fs2943rf
+              - img "Blue Stripe Classic Fit Shirt" [ref=e262]
+            - link "Chrome Textured Pique Polo Shirt" [ref=e264] [cursor=pointer]:
+              - /url: /products/chrome-textured-pique-polo-shirt-tp2658
+              - img "Chrome Textured Pique Polo Shirt" [ref=e265]
+          - button "❯" [ref=e266] [cursor=pointer]
+      - generic [ref=e270]:
+        - generic [ref=e272]:
+          - link "Customized Stitching" [ref=e275] [cursor=pointer]:
+            - /url: /pages/mtm
+          - generic [ref=e277]:
+            - paragraph [ref=e278]: Shop
+            - heading "Customized Stitching" [level=3] [ref=e279]:
+              - link "Customized Stitching" [ref=e280] [cursor=pointer]:
+                - /url: /pages/mtm
+                - generic [ref=e281]: Customized Stitching
+        - generic [ref=e283]:
+          - link "Gurkha Pants" [ref=e286] [cursor=pointer]:
+            - /url: /collections/gurkha-pants
+          - generic [ref=e288]:
+            - paragraph [ref=e289]: Shop
+            - heading "Gurkha Pants" [level=3] [ref=e290]:
+              - link "Gurkha Pants" [ref=e291] [cursor=pointer]:
+                - /url: /collections/gurkha-pants
+                - generic [ref=e292]: Gurkha Pants
+        - generic [ref=e294]:
+          - link "Uniworth Black" [ref=e297] [cursor=pointer]:
+            - /url: https://uniworthblack.com/
+          - generic [ref=e299]:
+            - paragraph [ref=e300]: Shop
+            - heading "Uniworth Black" [level=3] [ref=e301]:
+              - link "Uniworth Black" [ref=e302] [cursor=pointer]:
+                - /url: https://uniworthblack.com/
+                - generic [ref=e303]: Uniworth Black
+      - generic [ref=e307]:
+        - generic [ref=e308]:
+          - generic [ref=e309]:
+            - img "Free Shipping" [ref=e310]
+            - img "Free Shipping" [ref=e311]
+          - heading "Free Shipping" [level=3] [ref=e312]
+          - paragraph
+        - generic [ref=e313]:
+          - generic [ref=e314]:
+            - img "Secure Payments" [ref=e315]
+            - img "Secure Payments" [ref=e316]
+          - heading "Secure Payments" [level=3] [ref=e317]
+          - paragraph
+        - generic [ref=e318]:
+          - generic [ref=e319]:
+            - img "Premium Quality" [ref=e320]
+            - img "Premium Quality" [ref=e321]
+          - heading "Premium Quality" [level=3] [ref=e322]
+          - paragraph
+      - generic [ref=e327]:
+        - heading "@Uniworthshop" [level=2] [ref=e328]
+        - generic [ref=e332] [cursor=pointer]:
+          - img [ref=e333]
+          - paragraph [ref=e335]: Get 10% Off
+        - generic [ref=e337]:
+          - generic [ref=e339] [cursor=pointer]:
+            - img "Instagram uniworthshop"
+          - generic [ref=e340] [cursor=pointer]:
+            - generic:
+              - img
+          - generic [ref=e343] [cursor=pointer]:
+            - img "Instagram uniworthshop"
+          - generic [ref=e344] [cursor=pointer]:
+            - generic:
+              - img
+          - generic [ref=e347] [cursor=pointer]:
+            - img "Instagram uniworthshop"
+    - generic [ref=e348]:
+      - contentinfo [ref=e350]:
+        - generic [ref=e353]:
+          - generic [ref=e356]:
+            - img "Uniworth" [ref=e358]
+            - paragraph [ref=e360]: Uniworth is a menswear brand, designed entirely in-house, stand-alone Pakistan’s no. 1 Shirt Brand. From timeless tailoring to premium formal shirts, we present a considered edit of quality, wearable clothes, and accessories bearing the Uniworth name
+          - generic [ref=e362]:
+            - heading "INFORMATION" [level=2] [ref=e363]
+            - list [ref=e365]:
+              - listitem [ref=e366]:
+                - link "About Us" [ref=e367] [cursor=pointer]:
+                  - /url: /pages/about-us
+              - listitem [ref=e368]:
+                - link "Contact Us" [ref=e369] [cursor=pointer]:
+                  - /url: /pages/contact-us
+              - listitem [ref=e370]:
+                - link "How To Order" [ref=e371] [cursor=pointer]:
+                  - /url: /pages/how-to-order
+              - listitem [ref=e372]:
+                - link "Size Guide" [ref=e373] [cursor=pointer]:
+                  - /url: /pages/size-guide
+              - listitem [ref=e374]:
+                - link "Returns & Exchange Policy" [ref=e375] [cursor=pointer]:
+                  - /url: /pages/returns-exchange-policy
+              - listitem [ref=e376]:
+                - link "Careers" [ref=e377] [cursor=pointer]:
+                  - /url: /pages/careers
+              - listitem [ref=e378]:
+                - link "Blog" [ref=e379] [cursor=pointer]:
+                  - /url: https://uniworthshop.com/blogs/news
+          - generic [ref=e381]:
+            - heading "CUSTOMER SERVICES" [level=2] [ref=e382]
+            - list [ref=e384]:
+              - listitem [ref=e385]:
+                - link "Shipping Policy" [ref=e386] [cursor=pointer]:
+                  - /url: /pages/shipping-policy
+              - listitem [ref=e387]:
+                - link "Payment Options" [ref=e388] [cursor=pointer]:
+                  - /url: /pages/payment-options
+              - listitem [ref=e389]:
+                - link "FAQ's" [ref=e390] [cursor=pointer]:
+                  - /url: /pages/faqs
+              - listitem [ref=e391]:
+                - link "Made To Measure" [ref=e392] [cursor=pointer]:
+                  - /url: /pages/made-to-measure
+              - listitem [ref=e393]:
+                - link "Made To Measure Stores" [ref=e394] [cursor=pointer]:
+                  - /url: /pages/mtm
+              - listitem [ref=e395]:
+                - link "Feedback" [ref=e396] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e397]:
+                - link "Store Locator" [ref=e398] [cursor=pointer]:
+                  - /url: /pages/store-locator
+          - generic [ref=e400]:
+            - heading "STORE INFORMATION" [level=2] [ref=e401]
+            - list [ref=e403]:
+              - listitem [ref=e404]:
+                - link "042 111 789 456" [ref=e405] [cursor=pointer]:
+                  - /url: tel:042111789456
+                  - generic [ref=e407]: 042 111 789 456
+              - listitem [ref=e408]:
+                - link "+92 345 4037778" [ref=e409] [cursor=pointer]:
+                  - /url: https://wa.me/923454037778
+                  - generic [ref=e411]: +92 345 4037778
+              - listitem [ref=e412]:
+                - link "askus@uniworthshop.com" [ref=e413] [cursor=pointer]:
+                  - /url: mailto:askus@uniworthshop.com
+              - listitem [ref=e414]:
+                - 'link "Mon-Sat: (10:00AM To 06:00PM)" [ref=e415] [cursor=pointer]':
+                  - /url: "#"
+      - contentinfo [ref=e417]:
+        - list [ref=e424]:
+          - listitem [ref=e425]:
+            - link "Facebook" [ref=e426] [cursor=pointer]:
+              - /url: https://www.facebook.com/uniworthshop
+              - img [ref=e427]
+              - generic [ref=e429]: Facebook
+          - listitem [ref=e430]:
+            - link "Instagram" [ref=e431] [cursor=pointer]:
+              - /url: https://www.instagram.com/uniworthshop/
+              - img [ref=e432]
+              - generic [ref=e435]: Instagram
+          - listitem [ref=e436]:
+            - link "TikTok" [ref=e437] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@uniworthshop
+              - img [ref=e438]
+              - generic [ref=e440]: TikTok
+          - listitem [ref=e441]:
+            - link "YouTube" [ref=e442] [cursor=pointer]:
+              - /url: https://www.youtube.com/@Uniworthshopofficial
+              - img [ref=e443]
+              - generic [ref=e445]: YouTube
+      - generic [ref=e447]:
+        - generic [ref=e448]:
+          - text: UNIWORTH DRESS CO. All Rights Reserved. |
+          - link "Privacy Policy" [ref=e449] [cursor=pointer]:
+            - /url: /pages/privacy-policy
+        - generic [ref=e450]:
+          - generic [ref=e451]: 100% Safe Checkout
+          - img [ref=e452]
+  - generic [ref=e453]:
+    - img "Uniworth" [ref=e455]
+    - generic [ref=e456]:
+      - button "Close" [ref=e457] [cursor=pointer]:
+        - img [ref=e458]
+      - generic [ref=e460]:
+        - generic [ref=e461]:
+          - heading "LET’S STAY CONNECTED" [level=3] [ref=e462]
+          - generic [ref=e463]: Join our list for updates, new arrivals & exclusive savings made just for you.
+        - generic [ref=e464]:
+          - generic [ref=e467]:
+            - textbox "Your email" [ref=e469]:
+              - /placeholder: enter your email address
+            - button "Submit" [ref=e470] [cursor=pointer]
+          - list [ref=e471]:
+            - listitem [ref=e472]:
+              - link "Facebook" [ref=e473] [cursor=pointer]:
+                - /url: https://www.facebook.com/uniworthshop
+                - img [ref=e474]
+                - generic [ref=e476]: Facebook
+            - listitem [ref=e477]:
+              - link "Instagram" [ref=e478] [cursor=pointer]:
+                - /url: https://www.instagram.com/uniworthshop/
+                - img [ref=e479]
+                - generic [ref=e482]: Instagram
+            - listitem [ref=e483]:
+              - link "TikTok" [ref=e484] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@uniworthshop
+                - img [ref=e485]
+                - generic [ref=e487]: TikTok
+            - listitem [ref=e488]:
+              - link "YouTube" [ref=e489] [cursor=pointer]:
+                - /url: https://www.youtube.com/@Uniworthshopofficial
+                - img [ref=e490]
+                - generic [ref=e492]: YouTube
+          - generic [ref=e494] [cursor=pointer]: No, thanks
+  - img [ref=e498] [cursor=pointer]
+  - generic [ref=e502]:
+    - generic [ref=e503]:
+      - generic [ref=e504]:
+        - generic [ref=e505]: Menu
+        - button "Close" [ref=e506] [cursor=pointer]:
+          - img [ref=e507]
+          - text: Close
+      - list [ref=e509]:
+        - listitem [ref=e510]
+        - listitem [ref=e511]
+        - listitem [ref=e512]
+        - listitem [ref=e513]
+        - listitem [ref=e514]
+        - listitem [ref=e515]
+        - listitem [ref=e516]
+        - listitem [ref=e517]
+    - generic [ref=e518]:
+      - generic [ref=e519]:
+        - link "Sign In" [ref=e520] [cursor=pointer]:
+          - /url: /account/login
+          - img [ref=e522]
+          - text: Sign In
+        - link "Create an account" [ref=e524] [cursor=pointer]:
+          - /url: /account/register
+          - img [ref=e526]
+          - text: Create an account
+      - link "My wish list" [ref=e535] [cursor=pointer]:
+        - /url: ""
+        - img [ref=e537]
+        - generic [ref=e541]: My wish list
+  - generic [ref=e543] [cursor=pointer]:
+    - generic [ref=e544]:
+      - generic [ref=e547]: USD
+      - img [ref=e549]
+    - list:
+      - listitem [ref=e551]:
+        - generic [ref=e554]: Auto Location
+      - listitem [ref=e555]:
+        - generic [ref=e558]: US Dollar (USD)
+      - listitem [ref=e559]:
+        - generic [ref=e562]: Euro (EUR)
+      - listitem [ref=e563]:
+        - generic [ref=e566]: British Pound (GBP)
+      - listitem [ref=e567]:
+        - generic [ref=e570]: Canadian Dollar (CAD)
+```
