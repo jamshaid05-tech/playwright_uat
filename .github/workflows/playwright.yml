@@ -27,6 +27,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Debug - check secrets exist
+        run: |
+          if [ -z "$URL" ]; then echo "URL is EMPTY"; else echo "URL is SET"; fi
+          if [ -z "$EMAIL" ]; then echo "EMAIL is EMPTY"; else echo "EMAIL is SET"; fi
+          if [ -z "$PASSWORD" ]; then echo "PASSWORD is EMPTY"; else echo "PASSWORD is SET"; fi
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
