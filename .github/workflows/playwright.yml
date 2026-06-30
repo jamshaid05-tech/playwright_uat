@@ -18,7 +18,7 @@ jobs:
       id-token: write
 
     env:
-      URL: ${{ secrets.URL }}
+      URL: ${{ vars.URL }}
       EMAIL: ${{ secrets.EMAIL }}
       PASSWORD: ${{ secrets.PASSWORD }}
 
@@ -47,7 +47,7 @@ jobs:
 
       - name: Run Playwright tests
         run: |
-          export URL="${{ secrets.URL }}"
+          export URL="${{ vars.URL }}"
           export EMAIL="${{ secrets.EMAIL }}"
           export PASSWORD="${{ secrets.PASSWORD }}"
           npx playwright test
