@@ -51,14 +51,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
           publish_branch: gh-pages
-
-      - name: Zip Allure Report
-        if: always()
-        run: |
-          if [ -d "allure-report" ]; then
-            zip -r allure-report.zip allure-report
-          fi
-
       - name: Send Allure Report via Email
         if: always()
         uses: dawidd6/action-send-mail@v3
@@ -73,16 +65,10 @@ jobs:
           from: XtremeLabs UAT CI <${{ secrets.MAIL_USERNAME }}>
           body: |
             Playwright UAT automation run completed.
-
             Status:  ${{ job.status }}
             Branch:  ${{ github.ref_name }}
             Commit:  ${{ github.sha }}
-
             View the live Allure report here:
             https://jamshaid05-tech.github.io/playwright_uat/
-
             Full CI run log:
             ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-
-            The Allure HTML report is also attached as a zip.
-          attachments: allure-report.zip
