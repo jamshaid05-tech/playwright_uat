@@ -1,11 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
 import { STORAGE_STATE_PATH } from './helpers/storageState.js';
-import fs from 'fs';
-
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -18,8 +12,8 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : 1,
+  /* Parallelism: single worker on CI for stability, half the cores locally */
+  workers: process.env.CI ? 1 : '50%',
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['html'],
@@ -29,77 +23,51 @@ export default defineConfig({
       suiteTitle: false,
     }],
   ],
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-  timeout: 250000,
+  /* Per-test timeout */
+  timeout: 90 * 1000,
+  /* Shared settings for all the projects below. */
   use: {
-    /* Base URL to use in actions like `await page.goto('')`. */
+    /* Base URL to use in actions like `await page.goto('/')`. */
+    baseURL: process.env.URL,
     headless: true,
     viewport: { width: 1280, height: 720 },
-    actionTimeout: 0,
+    /* Fail an action after 15s instead of hanging until the test timeout */
+    actionTimeout: 15 * 1000,
+    /* Fail a navigation after 30s */
+    navigationTimeout: 30 * 1000,
     trace: 'on-first-retry',
-    storageState: fs.existsSync(STORAGE_STATE_PATH) ? STORAGE_STATE_PATH : undefined
   },
-
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'setup',
       testMatch: /global\.setup\.ts/,
       teardown: 'teardown',
-      timeout: 250000,
     },
     {
       name: 'teardown',
       testMatch: /global\.teardown\.ts/,
-      timeout: 250000,
     },
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        /* Reuse the authenticated state produced by the setup project */
+        storageState: STORAGE_STATE_PATH,
+      },
       dependencies: ['setup'],
     },
-
     /*
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: { ...devices['Desktop Firefox'], storageState: STORAGE_STATE_PATH },
       dependencies: ['setup'],
     },
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: { ...devices['Desktop Safari'], storageState: STORAGE_STATE_PATH },
       dependencies: ['setup'],
-    },
-    */
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
-
-    /* Test against branded browsers. */
-    /*
-    {
-      name: 'Microsoft Edge',
-      use: { ...devices['Desktop Edge'], channel: 'msedge' },
-      dependencies: ['setup'],
-    },
-    {
-      name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     },
     */
   ],
-
-  /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://localhost:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
 });
