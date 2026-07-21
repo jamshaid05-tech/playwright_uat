@@ -1,0 +1,4 @@
+Global teardown started.
+Cleaning up storage state files in .auth folder.
+Deleting file(s) 1 from .auth folder.
+Storage state files deleted successfully.
