@@ -1,0 +1,90 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - region [ref=e4]:
+        - img "XtremeLabs" [ref=e5]
+        - generic [ref=e7]:
+          - heading "Welcome" [level=2] [ref=e8]
+          - paragraph [ref=e9]: Sign in to your XtremeLabs account to continue.
+          - generic [ref=e10]:
+            - generic [ref=e11]: EMAIL
+            - region [ref=e12]:
+              - img
+              - textbox "Enter your email address" [ref=e13]:
+                - /placeholder: e.g. alex@xtremelabs.io
+          - generic [ref=e14]:
+            - generic [ref=e15]:
+              - generic [ref=e16]: PASSWORD
+              - link "FORGOT PASSWORD?" [ref=e17] [cursor=pointer]:
+                - /url: /Account/ForgotPassword?returnUrl=%2FMyAccount
+            - region [ref=e18]:
+              - img
+              - textbox "Enter your password" [ref=e19]:
+                - /placeholder: ""
+          - generic [ref=e20]:
+            - checkbox "KEEP ME SIGNED IN" [ref=e21]
+            - generic [ref=e22]: KEEP ME SIGNED IN
+          - button "SIGN IN →" [ref=e23] [cursor=pointer]
+          - generic [ref=e24]:
+            - text: NEW HERE?
+            - link "Create Account" [ref=e25] [cursor=pointer]:
+              - /url: /Account/Register?returnUrl=%2FMyAccount
+          - generic [ref=e27]: OR CONTINUE WITH
+          - generic [ref=e28]:
+            - button "Sign in with Google" [ref=e30] [cursor=pointer]:
+              - img [ref=e31]
+            - link "Sign in with Linkedin" [ref=e39] [cursor=pointer]:
+              - /url: https://www.linkedin.com/oauth/v2/authorization?response_type=code&state=987654321&scope=r_liteprofile%20r_emailaddress&client_id=78gx0ii8tjvrk5&redirect_uri=https://uat.xtremelabs.io//Account/LinkedinCallback
+              - img [ref=e40]
+            - link "Sign in with Microsoft" [ref=e44] [cursor=pointer]:
+              - /url: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=c8f559bf-6006-4abb-a1cc-d1400f80820b&response_type=code&redirect_uri=https://uat.xtremelabs.io//Account/MicrosoftCallback&scope=user.read
+              - img [ref=e45]
+        - contentinfo [ref=e50]:
+          - link "Privacy Policy" [ref=e51] [cursor=pointer]:
+            - /url: /Content/Guides/PrivacyCookies.docx
+            - img [ref=e52]
+            - text: Privacy Policy
+          - link "User Guide" [ref=e54] [cursor=pointer]:
+            - /url: /LabManuals/Guides/Self-ServiceStudentGuidetoXLabs_HTML5.pdf
+            - img [ref=e55]
+            - text: User Guide
+          - link "XtremeLabs Store" [ref=e57] [cursor=pointer]:
+            - /url: https://store.xtremelabs.io
+            - img [ref=e58]
+            - text: XtremeLabs Store
+          - link "Help Center" [ref=e61] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e62]
+            - text: Help Center
+      - img "Helix is coming, by XtremeLabs" [ref=e65]
+  - iframe [ref=e68]:
+    - generic [ref=f2e6]:
+      - text: protected by
+      - strong [ref=f2e7]: reCAPTCHA
+  - iframe [ref=e69]:
+    - generic [ref=f4e3]:
+      - generic:
+        - generic:
+          - generic: How can we help?
+          - generic:
+            - generic:
+              - generic: Couldn't connect. We'll keep retrying, or you can try now.
+          - generic:
+            - generic:
+              - img
+              - generic: XtremeLabs Support
+              - generic: We recommend you to visit support page for any queries or support, over the chat. We are working on making service more inclusive in future.
+          - generic:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - textbox "Send":
+                  - /placeholder: Type a message...
+            - generic: Send
+      - img [ref=f4e5] [cursor=pointer]
+```
