@@ -1,0 +1,193 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - banner [ref=e2]:
+    - img "XtremeLabs" [ref=e5]
+    - list [ref=e6]:
+      - text: 
+      - listitem [ref=e7]:
+        - generic [ref=e8]: "Select Language:"
+        - button "Select Language:" [ref=e9] [cursor=pointer]:
+          - generic [ref=e10]: English
+      - listitem [ref=e12]: Lab User_34f
+      - listitem [ref=e13]:
+        - button "Profile" [ref=e14] [cursor=pointer]: LU
+      - text:  
+  - navigation "Left Pane" [ref=e16]:
+    - generic [ref=e17]: "Main navigation includes: View Labs, Access Codes, History, Manage Classroom, Learning Pathways, Support, FAQs."
+    - tablist [ref=e18]:
+      - tab "View Lab Nav" [ref=e19] [cursor=pointer]: View Labs
+      - tab "Access Codes" [ref=e21] [cursor=pointer]: Access Codes
+      - tab "History" [ref=e23] [cursor=pointer]: History
+      - tab "Manage Classroom Nav" [ref=e25] [cursor=pointer]: Manage Classroom
+      - tab "Learning Pathways" [ref=e27] [cursor=pointer]: Learning Pathways
+      - listitem [ref=e29]
+      - tab "Support" [ref=e30] [cursor=pointer]: Support
+      - tab "FAQs" [selected] [ref=e32] [cursor=pointer]: FAQs
+  - main [ref=e35]:
+    - generic [ref=e36]: To access the main content, press D to jump to the main landmark, or press H to navigate through headings.
+    - generic [ref=e40]:
+      - heading "XtremeLabs Frequently Asked Questions" [level=1] [ref=e41]:
+        - text: XtremeLabs
+        - strong [ref=e43]: Frequently Asked Questions
+      - generic [ref=e44]:
+        - paragraph [ref=e45]: Welcome to XtremeLabs, a service of the XtremeLabs LLC. This document provides answers to some frequently asked questions about the Microsoft Official Courseware (MOC) hosted lab environment.
+        - heading "Signing in and Creating an Account" [level=2] [ref=e46]
+        - region "Question I'm new to Microsoft Labs Online. How do I proceed?" [ref=e47]:
+          - heading "Question I'm new to Microsoft Labs Online. How do I proceed?" [level=3] [ref=e48]: "Q: I'm new to Microsoft Labs Online. How do I proceed?"
+          - paragraph [ref=e49]:
+            - generic "Answer" [ref=e50]: "A:"
+            - text: Your first step to accessing your virtual labs will be to create an account. Since you are reading this, you have already navigated to the
+            - link "Navigate to Login Screen" [ref=e51] [cursor=pointer]:
+              - /url: http://labs.xtremelabs.io
+              - text: Login Screen
+          - img "Login page" [ref=e52]
+          - list [ref=e53]:
+            - listitem [ref=e54]: Click Register just above the login button.
+            - listitem [ref=e55]:
+              - paragraph [ref=e56]: To create your account, fill in the fields on the Create an account page.
+              - img "Register page" [ref=e57]
+              - paragraph [ref=e58]: "Note: The email address used to create your account is also used for password reminders. It is important to use a valid email address."
+            - listitem [ref=e59]: Click Sign Up at the lower right corner of the page.
+            - listitem [ref=e60]:
+              - paragraph [ref=e61]: You will be prompted to specify which Country you are logging in from
+              - img "Country selection" [ref=e62]
+              - paragraph [ref=e63]: This is optional. If you choose to not specify, click on Skip (your location will default to US) otherwise choose your respective Country from the dropdown and click on Save
+            - listitem [ref=e64]: You will be redirected to the Access Codes page. You will enter your Course Codes here.
+        - region "Question I already have an account. How do I sign-in?" [ref=e65]:
+          - heading "Question I already have an account. How do I sign-in?" [level=3] [ref=e66]: "Q: I already have an account. How do I sign-in?"
+          - paragraph [ref=e67]:
+            - generic "Answer" [ref=e68]: "A:"
+            - text: In Internet Explorer, navigate to
+            - link "Navigate to XtremeLabs Site" [ref=e69] [cursor=pointer]:
+              - /url: http://labs.xtremelabs.io
+              - text: XtremeLabs Site
+          - list [ref=e70]:
+            - listitem [ref=e71]: Enter the email address used to create your account and enter your password.
+            - listitem [ref=e72]: Click Sign in. For a persistent sign in, check the Keep me signed in checkbox.
+            - listitem [ref=e73]: You will be redirected to the View labs page. All of the labs that you have access to will be listed here.
+        - heading "General Notes" [level=2] [ref=e74]
+        - region "Question How do I add a Course Code?" [ref=e75]:
+          - heading "Question How do I add a Course Code?" [level=3] [ref=e76]: "Q: How do I add a Course Code?"
+          - paragraph [ref=e77]:
+            - generic "Answer" [ref=e78]: "A:"
+            - text: If you have just opened a new account, you will already be on the My codes page. If you already have an account and have just signed in, you may be on the My labs page. In that case, navigate to the Access Codes page by first clicking on the Access Codes link in the left navigation bar
+          - img "My Codes Page" [ref=e79]
+          - list [ref=e80]:
+            - listitem [ref=e81]:
+              - paragraph [ref=e82]: On the My codes page, in the Add a code to your account text box, enter the code given to you by your instructor or from your book. Note that all active courses will be displayed on the left side under the 'My labs' title.
+              - img "Enter your code textbox" [ref=e83]
+            - listitem [ref=e84]:
+              - paragraph [ref=e85]: Click Add code. Your course will be added to the My codes page.
+            - listitem [ref=e86]:
+              - paragraph [ref=e87]: Your course labs should now be available. To see the lab modules in your active course labs, click on the course number. Your course's lab modules should now be visible.
+              - img "New lab tile" [ref=e88]
+          - paragraph [ref=e89]: "Note: If you do not see the labs associated with your particular course on your course home page, you should inform your instructor."
+        - region "Question How do I launch a Lab?" [ref=e90]:
+          - heading "Question How do I launch a Lab?" [level=3] [ref=e91]: "Q: How do I launch a Lab?"
+          - paragraph [ref=e92]:
+            - generic "Answer" [ref=e93]: "A:"
+            - text: From any page, select an active course that is listed under the 'View Labs' option (see above). Then select the lab module that you want to launch by hovering over the lab module's 'Take Lab' button
+          - img "Launch Lab Button" [ref=e94]
+          - paragraph [ref=e95]: "(which will turn light blue) and clicking it. This will open the lab module's Description box:"
+          - img "Lab Description" [ref=e96]
+          - paragraph [ref=e97]: The duration and description of the subject lab module will be presented here. To launch the lab module, hover over and click on the 'Continue' button.
+          - list [ref=e98]:
+            - listitem [ref=e99]:
+              - paragraph [ref=e100]: While your lab loads, you will see a spinner with tips and tricks for the lab hosting system.
+              - img "Lab launching" [ref=e101]
+              - paragraph [ref=e102]: "Note: If your lab takes longer than five minutes to load, refresh your browser page by pressing the F5 key. If you still cannot access your lab, please alert your instructor."
+              - paragraph [ref=e103]: "Note: Some labs have been modified from the on-premises version to operate correctly in an online environment. If a lab has been altered, a “Lab Notice” message will appear after the lab loads. Clicking the Notes tile will launch a Lab Notes document that"
+              - img "lab notice" [ref=e104]
+            - listitem [ref=e105]:
+              - text: Once the lab loads and the environment is ready, your lab view will be displayed.
+              - img "virtual machine" [ref=e106]
+              - paragraph [ref=e107]: See the Take a Lab section of the full Student User Guide document to learn how to use the many user interfaces on this page.
+        - region "Question Do I need to configure the Hyper-V environment before beginning a lab?" [ref=e108]:
+          - heading "Question Do I need to configure the Hyper-V environment before beginning a lab?" [level=3] [ref=e109]: "Q: Do I need to configure the Hyper-V environment before beginning a lab?"
+          - paragraph [ref=e110]:
+            - generic "Answer" [ref=e111]: "A:"
+            - text: No. Students do not have access to the Hyper-V host environment. Steps pertaining to Hyper-V Manager within the Lab Setup section have already been completed.
+        - region "Question Do I need to set up Internet Access?" [ref=e112]:
+          - heading "Question Do I need to set up Internet Access?" [level=3] [ref=e113]: "Q: Do I need to set up Internet Access?"
+          - paragraph [ref=e114]:
+            - generic "Answer" [ref=e115]: "A:"
+            - text: No. Internet access is available when needed. There is no need to use the MSL‐TMG1 virtual machine.
+        - region "Question How do I resize the Virtual Machine Window?" [ref=e116]:
+          - heading "Question How do I resize the Virtual Machine Window?" [level=3] [ref=e117]: "Q: How do I resize the Virtual Machine Window?"
+          - paragraph [ref=e118]:
+            - generic "Answer" [ref=e119]: "A:"
+            - text: You can adjust the size of the virtual machine window by changing the screen resolution in the virtual machine.
+        - heading "Getting More Help" [level=2] [ref=e120]
+        - region "Question Is there a User Guide for Microsoft Labs Online?" [ref=e121]:
+          - heading "Question Is there a User Guide for Microsoft Labs Online?" [level=3] [ref=e122]: "Q: Is there a User Guide for Microsoft Labs Online?"
+          - paragraph [ref=e123]:
+            - generic "Answer" [ref=e124]: "A:"
+            - text: Yes. If you have an instructor, ask them for a copy. If you do not have an instructor you can download a copy from
+            - link "If you do not have an instructor, you can download a copy of User Guide from here" [ref=e125] [cursor=pointer]:
+              - /url: /LabManuals/Guides/Self-ServiceStudentGuidetoXLabs_HTML5.pdf
+              - text: User Guide
+            - text: .
+        - region "Question How do I contact Support?" [ref=e126]:
+          - heading "Question How do I contact Support?" [level=3] [ref=e127]: "Q: How do I contact Support?"
+          - paragraph [ref=e128]:
+            - generic "Answer" [ref=e129]: "A:"
+            - text: You can call the XtremeLabs Support Team at the phone number below during the following hours.
+        - heading "XtremeLabs - Lab Support Contacts" [level=2] [ref=e130]
+        - table "XtremeLabs - Lab Support Contacts Information" [ref=e131]:
+          - rowgroup [ref=e132]:
+            - row "Contact Type Details" [ref=e133]:
+              - columnheader "Contact Type" [ref=e134]
+              - columnheader "Details" [ref=e135]
+          - rowgroup [ref=e136]:
+            - row "Email jamshaid.ahmad@xtremelabs.io" [ref=e137]:
+              - rowheader "Email" [ref=e138]
+              - cell "jamshaid.ahmad@xtremelabs.io" [ref=e139]
+            - row "Phone (800)-239-7051" [ref=e140]:
+              - rowheader "Phone" [ref=e141]
+              - cell "(800)-239-7051" [ref=e142]
+            - row "Hours 24 hours - 7 days a week" [ref=e143]:
+              - rowheader "Hours" [ref=e144]
+              - cell "24 hours - 7 days a week" [ref=e145]:
+                - list [ref=e146]:
+                  - listitem [ref=e147]: 24 hours - 7 days a week
+            - row "Observed Holidays New Year's Day U.S. Memorial Day U.S. Independence Day U.S. Labor Day U.S. Thanksgiving Holiday U.S. Christmas Holiday" [ref=e148]:
+              - rowheader "Observed Holidays" [ref=e149]
+              - cell "New Year's Day U.S. Memorial Day U.S. Independence Day U.S. Labor Day U.S. Thanksgiving Holiday U.S. Christmas Holiday" [ref=e150]:
+                - list [ref=e151]:
+                  - listitem [ref=e152]: New Year's Day
+                  - listitem [ref=e153]: U.S. Memorial Day
+                  - listitem [ref=e154]: U.S. Independence Day
+                  - listitem [ref=e155]: U.S. Labor Day
+                  - listitem [ref=e156]: U.S. Thanksgiving Holiday
+                  - listitem [ref=e157]: U.S. Christmas Holiday
+    - contentinfo "footer" [ref=e158]:
+      - generic [ref=e159]:
+        - link "Privacy Policy" [ref=e160] [cursor=pointer]:
+          - /url: /Content/Guides/PrivacyCookies.docx
+        - text: © 2026 XtremeLabs LLC
+  - iframe [ref=e161]:
+    - generic [ref=f10e3]:
+      - generic:
+        - generic:
+          - generic: How can we help?
+          - generic:
+            - generic:
+              - generic: Couldn't connect. We'll keep retrying, or you can try now.
+          - generic:
+            - generic:
+              - img
+              - generic: XtremeLabs Support
+              - generic: We're here to talk, so ask us anything!
+          - generic:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - textbox "Send":
+                  - /placeholder: Type a message...
+            - generic: Send
+      - img [ref=f10e5] [cursor=pointer]
+```
